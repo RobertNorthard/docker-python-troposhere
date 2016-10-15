@@ -3,7 +3,6 @@ require 'docker'
 
 describe "Dockerfile#build" do
 
-
   before(:all) do
     @docker_image = Docker::Image.build_from_dir('.')
     set :backend, :docker
